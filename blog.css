@@ -1,4 +1,22 @@
+/* Colors:
+ bcf4f5
+ b4ebca
+ d9f2b4 */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: 353531;
+}
+
+#options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 33%;
+  padding: 20px;
+  list-style-type: none;
+  margin-left: auto;
+}
+
+#items {
+  justify-self: end;
 }
