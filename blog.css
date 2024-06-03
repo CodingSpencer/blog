@@ -3,9 +3,21 @@
  b4ebca
  d9f2b4 */
 
+header #items {
+  color: #274690;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 20px;
+}
+
+header h1 {
+  color: #274690;
+}
+
 body {
   font-family: "Times New Roman", Times, serif;
-  color: #353531;
+  color: #302b27;
 }
 
 header h1 {
@@ -18,8 +30,8 @@ header h1 {
 }
 
 #bar {
-  border-bottom: 2px solid yellow;
-  border-top: 2px solid yellow;
+  border-bottom: 2px solid #302b27;
+  border-top: 2px solid #302b27;
 }
 
 #options {
@@ -48,17 +60,19 @@ header h1 {
 }
 
 #bookContainer {
-  border-bottom: 2px dotted black;
+  border-bottom: 2px dotted #302b27;
   grid-column: content;
   display: grid;
   grid-template-columns: 200px 1fr;
-  border-right: 2px solid black;
+  border-right: 2px solid #302b27;
 }
 
 #stats {
   grid-column: 1 / 2;
-  border-right: 2px solid black;
+  border-right: 2px solid #302b27;
+  padding-right: 10px;
   margin-right: 10px;
+  text-align: end;
 }
 
 #book {
@@ -74,7 +88,7 @@ header h1 {
 .skiptocontent a {
   position: absolute;
   top: -40px;
-  background: black;
+  background: #302b27;
   color: white;
 }
 
