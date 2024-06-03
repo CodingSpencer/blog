@@ -25,3 +25,46 @@ const articles = [
     stars: "⭐⭐⭐⭐",
   },
 ];
+
+const books = document.getElementById("books-container");
+
+articles.forEach((item) => {
+  const bookContainer = document.createElement("div");
+  bookContainer.id = "bookContainer";
+
+  const stats = document.createElement("div");
+  stats.id = "stats";
+  const date = document.createElement("h2");
+  const age = document.createElement("h3");
+  const genre = document.createElement("h3");
+  const stars = document.createElement("h3");
+
+  date.textContent = item.date;
+  age.textContent = item.ages;
+  genre.textContent = item.genre;
+  stars.textContent = item.stars;
+
+  stats.appendChild(date);
+  stats.appendChild(age);
+  stats.appendChild(genre);
+  stats.appendChild(stars);
+  bookContainer.appendChild(stats);
+
+  const book = document.createElement("div");
+  book.id = "book";
+  const title = document.createElement("h2");
+  const img = document.createElement("img");
+  const desc = document.createElement("h4");
+
+  title.textContent = item.title;
+  desc.textContent = item.description;
+  img.src = item.imgSrc;
+  img.alt = item.imgAlt;
+
+  book.appendChild(title);
+  book.appendChild(img);
+  book.appendChild(desc);
+  bookContainer.appendChild(book);
+
+  books.appendChild(bookContainer);
+});

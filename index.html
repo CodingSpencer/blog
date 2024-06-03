@@ -7,12 +7,12 @@
     <meta name="description" content="Website that'll display books." />
     <meta name="author" content="Spencer Ashcraft" />
     <link rel="stylesheet" href="blog.css" />
-    <script src="blog.js"></script>
+    <script src="blog.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Kids Read for Fun</h1>
-      <nav>
+      <nav id="bar">
         <ul id="options">
           <li><a href="#" id="items">About</a></li>
           <li><a href="#" id="items">Archive</a></li>
@@ -21,20 +21,11 @@
       </nav>
     </header>
     <body>
-      <div id="stats">
-        <h2 id="date">July 5, 2022</h2>
-        <h3 id="age">10-14</h3>
-        <h3 id="genre">Fantasy</h3>
-        <h3 id="stars">****</h3>
-      </div>
-      <div id="book">
-        <h2 id="title"></h2>
-        <img id="cover" src="" alt="" />
-        <h3 id="desc"></h3>
-      </div>
-      <div id="filters">
-        <p>Filter form will go here</p>
-      </div>
+      <section id="books-container">
+        <div id="filters">
+          <p>Filter form will go here</p>
+        </div>
+      </section>
     </body>
   </body>
 </html>
