@@ -4,7 +4,7 @@
  d9f2b4 */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   color: #353531;
 }
 
@@ -38,35 +38,46 @@ header h1 {
 #books-container {
   display: grid;
   grid-template-columns: 1fr 250px;
-  grid-template-rows: 100vh;
+  grid-template-rows: 1fr;
   grid-template-areas: "content sidebar";
-  border: 2px solid red;
+  height: 100vh;
 }
 
 #books {
   grid-column: 0/1;
-  border: 2px solid black;
 }
 
 #bookContainer {
+  border-bottom: 2px dotted black;
   grid-column: content;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 2px solid purple;
+  grid-template-columns: 200px 1fr;
+  border-right: 2px solid black;
 }
 
 #stats {
   grid-column: 1 / 2;
-  border: 2px solid blue;
+  border-right: 2px solid black;
+  margin-right: 10px;
 }
 
 #book {
   grid-column: 0 / 1;
-  border: 2px solid green;
 }
 
 #filters {
   grid-area: sidebar;
   height: 100%;
-  border: 2px solid orange;
+  padding-left: 10px;
+}
+
+.skiptocontent a {
+  position: absolute;
+  top: -40px;
+  background: black;
+  color: white;
+}
+
+.skiptocontent a:focus {
+  top: 0;
 }
